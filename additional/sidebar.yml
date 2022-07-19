@@ -1,0 +1,10 @@
+---
+section: additional
+title: Zusätzliche ÜBERLEGUNGEN ZU AUSRUHEN
+entries:
+- title: Sicherheit
+  url: "/additional/security.html"
+- title: Arbeiten mit Sammlungen
+  url: "/additional/working_with_collections.html"
+- title: Diagnose
+  url: "/additional/diagnostics_support.html"

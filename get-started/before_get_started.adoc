@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: get-started/before_get_started.html 
+keywords:  
+summary:  
+---
+= Bevor Sie beginnen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können sich schnell auf die ersten Schritte mit der Rest-API von Astra Control vorbereiten, indem Sie die unten beschriebenen Schritte überprüfen.
+
+Prüfen Sie die Daten link:../rest-core/rest_web_services.html["Core-REST-Implementierung"] Für Informationen über REST-Konzepte und die Details zur Entwicklung der Astra Control REST API.
+
+Sie benötigen Astra-Anmeldeinformationen, um sich bei der Astra Web-Benutzeroberfläche anzumelden und ein API-Token zu generieren. Mit Astra Control Center verwalten Sie diese Anmeldedaten lokal. Bei Astra Control Service werden die Kontodaten vom *Auth0*-Dienst verwaltet.
+
+Beachten Sie die zusätzlichen Informationsressourcen, wie in vorgeschlagen link:../information/additional_resources.html["Weitere Ressourcen"].

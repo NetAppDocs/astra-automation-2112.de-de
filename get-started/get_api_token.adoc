@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: get-started/get_api_token.html 
+keywords:  
+summary:  
+---
+= Holen Sie sich ein API-Token
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie benötigen ein API-Zugriffstoken, um die Astra Control REST API zu verwenden.
+
+
+NOTE: Die Astra API Token laufen nie ab, Sie können jedoch ein Token aufheben, wenn es nicht mehr benötigt wird.
+
+Sie benötigen die Zugangsdaten für ein Astra-Konto.
+
+Diese Aufgabe erzeugt ein API-Token in der Astra-Webschnittstelle. Sie sollten auch die Konto-ID abrufen, die auch für einen API-Aufruf erforderlich ist.
+
+.Schritte
+. Melden Sie sich mit Ihren Anmeldedaten im Astra an.
++
+Rufen Sie die folgende Website für den Astra Control Service auf: https://astra.netapp.io/["https://astra.netapp.io"^]
+
+. Klicken Sie auf das Figurensymbol oben rechts auf der Seite und wählen Sie *API Access*.
+. Klicken Sie auf *API-Token generieren* auf der Seite und klicken Sie im Popup-Fenster auf *API-Token generieren*.
+. Klicken Sie auf das Symbol, um die Token-Zeichenfolge in die Zwischenablage zu kopieren und im Editor zu speichern.
+. Kopieren Sie die Konto-id, die auf derselben Seite verfügbar ist, und speichern Sie sie.
+
+
+Wenn Sie über Curl oder eine Programmiersprache auf die Astra Control REST API zugreifen, müssen Sie das API-Träger-Token in das einschließen `Authorization` Kopfzeile der Anfrage. Informationen zum Widerruf des Tokens finden Sie unter link:../additional/security.html["Sicherheit"].

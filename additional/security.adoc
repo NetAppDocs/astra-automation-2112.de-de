@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: additional/security.html 
+keywords:  
+summary:  
+---
+= Sicherheit
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die Astra Control REST API bietet mehrere Sicherheitsebenen.
+
+
+NOTE: Der gesamte HTTP-Netzwerkverkehr wird über den Standard des TLS-Protokolls (Transport Layer Security) gesichert.
+
+
+
+== Astra API Token
+
+Um die Astra Control REST API zu verwenden, müssen Sie für jede Anforderung im ein API-Token bereitstellen `Authorization` Kopfzeile der Anfrage. Beachten Sie Folgendes:
+
+* Sie können ein API-Token auf der Astra Web-Benutzeroberfläche generieren.
+* Ein Token läuft nie ab, nachdem es erstellt wurde.
+* Sie können ein Token jederzeit über die Astra Web-Benutzeroberfläche widerrufen.
+
+
+Siehe link:../get-started/get_api_token.html["Holen Sie sich ein API-Token"] Finden Sie weitere Informationen.
+
+
+
+== Ein API-Zugriffstoken wird rückgängig gemacht
+
+Sie können ein API-Token an der Astra-Webschnittstelle widerrufen, wenn es nicht mehr benötigt wird.
+
+Sie benötigen ein Konto für den Astra-Service. Sie sollten auch die Token identifizieren, die Sie widerrufen möchten.
+
+Nachdem ein Token entzogen wurde, ist es sofort und dauerhaft unbrauchbar.
+
+.Schritte
+. Melden Sie sich mit Ihren Anmeldedaten im Astra an.
++
+Rufen Sie die folgende Website für den Astra Control Service auf: https://astra.netapp.io/["https://astra.netapp.io"^]
+
+. Klicken Sie auf das Figurensymbol oben rechts auf der Seite und wählen Sie *API Access*.
+. Wählen Sie das Token oder die Token aus, die Sie widerrufen möchten.
+. Klicken Sie im Dropdown-Feld *Aktionen* auf *Token aufheben*.
+
+
+
+
+== Rollen und Zugriffssteuerung
+
+Jeder Astra-Benutzer wird einer einzigen Rolle zugewiesen, die die Aktionen bestimmt, die durchgeführt werden können. Die Rollen sind in einer Hierarchie angeordnet, wie in der folgenden Tabelle beschrieben.
+
+[cols="15,85"]
+|===
+| Rolle | Beschreibung 
+
+
+| Eigentümer | Hat alle Berechtigungen der Admin-Rolle und kann auch Astra-Konten löschen. 
+
+
+| Admin | Verfügt über alle Berechtigungen der Mitgliedsrolle und kann Benutzer auch dazu einladen, einem Konto beizutreten. 
+
+
+| Mitglied | Kunden können ihre Astra-Applikations- und Computing-Ressourcen vollständig managen. 
+
+
+| Prüfer | Beschränkt auf die Anzeige von Ressourcen. 
+|===
