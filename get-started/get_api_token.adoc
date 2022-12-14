@@ -19,8 +19,10 @@ Sie benötigen ein API-Zugriffstoken, um die Astra Control REST API zu verwenden
 
 NOTE: Die Astra API Token laufen nie ab, Sie können jedoch ein Token aufheben, wenn es nicht mehr benötigt wird.
 
+.Bevor Sie beginnen
 Sie benötigen die Zugangsdaten für ein Astra-Konto.
 
+.Über diese Aufgabe
 Diese Aufgabe erzeugt ein API-Token in der Astra-Webschnittstelle. Sie sollten auch die Konto-ID abrufen, die auch für einen API-Aufruf erforderlich ist.
 
 .Schritte
@@ -34,4 +36,5 @@ Rufen Sie die folgende Website für den Astra Control Service auf: https://astra
 . Kopieren Sie die Konto-id, die auf derselben Seite verfügbar ist, und speichern Sie sie.
 
 
+.Nachdem Sie fertig sind
 Wenn Sie über Curl oder eine Programmiersprache auf die Astra Control REST API zugreifen, müssen Sie das API-Träger-Token in das einschließen `Authorization` Kopfzeile der Anfrage. Informationen zum Widerruf des Tokens finden Sie unter link:../additional/security.html["Sicherheit"].
