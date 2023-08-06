@@ -130,7 +130,7 @@ Die folgenden Abfrageparameter stehen zur Verwendung mit Ressourcensammlungen zu
 Im Folgenden werden die HTTP-Statuscodes beschrieben, die von der REST-API von Astra Control verwendet werden.
 
 
-NOTE: Die Astra Control REST API nutzt auch den *Problemdetails für HTTP APIs* Standard. Siehe link:diagnostics_support.html["Diagnose und Support"] Finden Sie weitere Informationen.
+NOTE: Die Astra Control REST API nutzt auch den *Problemdetails für HTTP APIs* Standard. Siehe link:../additional/diagnostics_support.html["Diagnose und Support"] Finden Sie weitere Informationen.
 
 [cols="15,20,65"]
 |===
